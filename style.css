@@ -27,12 +27,19 @@
 .contact {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Valor ajustável para controlar o arredondamento */
     text-align: left;
     padding: 10px;
     padding-right: 10%;
     width: auto;
     margin-right: 60px; /* Mantém o espaçamento à direita, se necessário */
     margin-left: 20px; /* Adiciona um espaçamento à esquerda, ajuste conforme necessário */
+}
+
+/*Suavizando o aspecto dos hiperlinks em contatos*/
+.contact a{
+    text-decoration: none; /* removendo o sublinhado */
+    color: inherit; /* removendo a cor azul*/
 }
 
 .contact p{
@@ -58,13 +65,73 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+
+.beta{
+    text-align: justify;
+    columns: 2;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+
+}
+
+.beta h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+
+    padding: 5%;
+}
+
+.beta h2::before {
+    content: '';
+    display: inline-block;
+    width: 10px; /* Largura do círculo */
+    height: 10px; /* Altura do círculo */
+    border-radius: 50%; /* Torna-o um círculo */
+    background-color: rgb(207, 102, 255); /* Cor do círculo */
+    margin-right: 10px; /* Espaço entre o círculo e o texto (ajuste conforme necessário) */
+}
+
+.beta p{
+    text-align: justify;
+    margin: 15px;
+}
+
+.gamma {
+    text-align: justify;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+
+}
+
+.gamma h2 {
+    text-align: center;
+}
+
+.gamma img {
+    width: 80px;
+    margin-right: 20px;
+}
+
 body{
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(91deg, #ffd86d, #ffa2f7, #8bbeff); /* Degradê não linear com 3 cores */
     margin: 30px;
     padding: 0;
+    transition: transform 0.5s ease-in-out;
 
 }
+
 
 /*ANIMAÇÕES:*/
 /**Animação de entrada do título maior**/
