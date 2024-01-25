@@ -168,7 +168,10 @@
 .beta h2:nth-of-type(5)::before {
     background-color: rgb(52, 255, 116);
 }
-
+/*Idiomas*/
+.beta h2:nth-of-type(6)::before {
+    background-color: rgb(255, 128, 69);
+}
 
 .beta p{
     text-align: justify;
@@ -345,6 +348,7 @@
     border-radius: 50%;
     left: 0;
     top: 0;
+    cursor: pointer;
     box-sizing: border-box;
 }
 
@@ -445,4 +449,17 @@ a {
 
 .pulse {
     animation: pulse 1s ease-in-out;
+}
+
+/*Transição de página*/
+.cobertura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff; /* Cor de fundo da animação */
+    opacity: 0; /* Começa transparente */
+    transition: opacity 1s ease-in-out; /* Adiciona uma transição de opacidade */
+    z-index: 9999; /* Garante que a cobertura está acima de outros elementos */
 }

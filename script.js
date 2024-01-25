@@ -1,4 +1,4 @@
-// 1-Animação da seleção de cada ferramenta:
+// 1-Animação da seleção:
 
 document.addEventListener('DOMContentLoaded', function () {
     console.log(document);
@@ -26,3 +26,26 @@ document.addEventListener('DOMContentLoaded', function () {
        
     });
 });
+
+// 3-Transição de página
+document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('.circulo-interno');
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var destino = link.getAttribute('href');
+            irParaPagina(destino);
+        });
+    });
+});
+
+function irParaPagina(destino) {
+    var cobertura = document.getElementById('cobertura');
+    cobertura.style.opacity = 1;
+
+    setTimeout(function () {
+        window.location.href = destino;
+    }, 1000); // Tempo da transição em milissegundos (1 segundo no exemplo)
+}
+
