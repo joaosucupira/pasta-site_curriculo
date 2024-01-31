@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(91deg, #ffd86d, #ffa2f7, #8bbeff); /* Degradê não linear com 3 cores */
+    
+}
+
+
+/* flexbox que segura todas */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* modelo para cada seção do curriculo */
+.sheet {
+    display: flex;
+    background-color:#fff8e5;
+    margin: 3px;
+    margin-top: 30px;
+    padding:35px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    width: 900px;
+}
+
+
+/* lista de pedaços do curriculo */
+.first {
+    height: 190px;
+}
+
+.second {
+    height: 700px;
+}
+
+.third {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/* arranjo do primeiro pedaço com a foto */
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url('imgs/joao-antonio2.JPG');
+    background-size: contain;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* tags para configuração dos textos */
+.normal-text {
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family:Helvetica, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(1, 0, 97);
+}
+
+.nome {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:black;
+}
+
+
+/* div simples generica para organização dos blocos de texto */
+.text-block {
+    display: flex;
+}
