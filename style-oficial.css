@@ -15,18 +15,57 @@ body {
 /* modelo para cada seção do curriculo */
 .sheet {
     display: flex;
-    background-color:#fff8e5;
+    background-color:white;
     margin: 3px;
     margin-top: 30px;
     padding:35px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
     width: 900px;
+    justify-content: center;
 }
 
+.sheetblock {
+    display: flex;
+    align-items: center;
+    background-color: #deedff;
+    width: 875px;
+    height: 250px;
+}
+
+.leftblock {
+    display: flex;
+    font-size: 30px;
+    font-family: Impact, sans-serif;
+    text-transform: uppercase;
+    background-color: #ffa2f7;
+    padding: 10px;
+    margin: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.rightblock {
+    display: flex;
+    /* font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 19px; */
+    background-color: #ffa2a2;
+    padding: 10px;
+    margin: 30px;
+    text-align: left;
+}
+
+.info {
+    font-size: 15px;
+    background-color: #ffd86d;
+    margin-top: 0px;
+    padding: 10px;
+    
+}
 
 /* lista de pedaços do curriculo */
 .first {
-    height: 190px;
+    height: 160px;
 }
 
 .second {
@@ -64,19 +103,55 @@ body {
     font-size: 20px;
     font-family:Helvetica, Arial, Helvetica, sans-serif;
     font-weight: normal;
-    color: rgb(1, 0, 97);
+    color: rgb(1, 0, 0);
 }
 
 .nome {
     font-family: 'Times New Roman', Times, serif;
-    font-size:50px;
-    margin-bottom: 20px;
+    font-size:60px;
+    margin-bottom: 30px;
     font-weight: bold;
     color:black;
 }
 
+.sub-titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 21px;
+    text-transform: capitalize;
+}
 
 /* div simples generica para organização dos blocos de texto */
 .text-block {
     display: flex;
 }
+
+.contato {
+
+    justify-content: center;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.contato div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    margin-left: 20px;
+}
+
+.link:hover {
+    color: blue;
+}
+
+.contato .normal-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
